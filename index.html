@@ -4,14 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AA Interactive — Mobile Games &amp; Apps, Lahore</title>
-<meta name="description" content="AA Interactive is an independent mobile game and app studio in Lahore, Pakistan. Makers of Stackfall Tiles and Stackfall Blocks.">
+<meta name="description" content="AA Interactive is an independent mobile game and app studio in Lahore, Pakistan. Makers of Stackfall, Stackfall Tiles and Stackfall Blocks.">
 <meta property="og:title" content="AA Interactive">
 <meta property="og:description" content="Independent mobile game and app studio in Lahore, Pakistan.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#1F2433">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -35,117 +36,231 @@
   <div class="wrap top-row">
     <a class="brand" href="#">
       <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      AA Interactive
+      <span>AA Interactive</span>
     </a>
     <nav>
       <a href="#games">Games</a>
       <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <a href="#process">Process</a>
+      <a class="nav-cta" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
+  <!-- HERO -->
   <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Independent studio · Lahore, Pakistan</p>
-      <h1>We make calm, clever<br>mobile puzzle games.</h1>
-      <p class="lead">AA Interactive designs, builds and publishes games and apps for Android and iOS — from the first sketch to the store listing and every update after launch.</p>
-      <div class="cta">
-        <a class="btn" href="#games">See our games</a>
-        <a class="btn ghost" href="#contact">Get in touch</a>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Independent studio · Lahore, Pakistan</p>
+        <h1>Small games.<br><span class="hl">Big</span> satisfaction.</h1>
+        <p class="lead">AA Interactive designs, builds and publishes puzzle games and mobile apps for Android and iOS — from the first sketch to the store listing and every update after launch.</p>
+        <div class="cta">
+          <a class="btn" href="#games">Play our games</a>
+          <a class="btn ghost" href="#contact">Work with us</a>
+        </div>
+        <dl class="stats">
+          <div><dt>3</dt><dd>puzzle games</dd></div>
+          <div><dt>9+</dt><dd>years in Unity &amp; Flutter</dd></div>
+          <div><dt>60+</dt><dd>projects shipped</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="board">
+          <!-- falling piece -->
+          <div class="piece"><i></i><i></i><i></i><i></i></div>
+          <!-- settled stack, 8 cols x 5 rows -->
+          <div class="stack">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i class="b"></i><i></i><i></i><i></i><i></i><i></i><i class="r"></i><i></i>
+            <i class="b"></i><i class="b"></i><i></i><i class="g"></i><i></i><i class="a"></i><i class="r"></i><i class="r"></i>
+            <i class="a"></i><i class="b"></i><i class="g"></i><i class="g"></i><i class="p"></i><i class="a"></i><i class="a"></i><i class="r"></i>
+            <i class="a"></i><i class="a"></i><i class="g"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="b"></i><i class="b"></i>
+          </div>
+        </div>
+        <div class="float f1"><img src="assets/icon-tiles.png" alt=""></div>
+        <div class="float f2"><img src="assets/icon-blocks.png" alt=""></div>
+        <div class="float f3"><img src="assets/icon-stackfall.png" alt=""></div>
       </div>
     </div>
   </section>
 
+  <!-- TECH STRIP -->
+  <div class="strip">
+    <div class="wrap strip-row">
+      <span>Built with</span>
+      <b>Unity</b><b>Flutter</b><b>Firebase</b><b>Google AdMob</b><b>ARCore</b><b>Vuforia</b>
+    </div>
+  </div>
+
+  <!-- GAMES -->
   <section id="games" class="games">
     <div class="wrap">
-      <h2>Our games</h2>
+      <div class="section-head">
+        <p class="eyebrow">Our games</p>
+        <h2>Puzzles you can play in a coffee break — and come back to every day.</h2>
+      </div>
 
-      <article class="game">
-        <img class="shot" src="assets/shot-tiles.jpg" alt="Stackfall Tiles gameplay screenshot" width="405" height="720" loading="lazy">
-        <div class="game-body">
-          <div class="game-head">
-            <img class="icon" src="assets/icon-tiles.png" alt="" width="72" height="72">
-            <div>
-              <h3>Stackfall Tiles: Triple Match</h3>
-              <span class="tag live">Available on Google Play</span>
+      <div class="game-list">
+        <article class="game" style="--accent: #3B6FD8; --tint: #E3ECFB;">
+          <div class="phone"><img src="assets/shot-tiles.jpg" alt="Stackfall Tiles gameplay" loading="lazy"></div>
+          <div class="game-body">
+            <div class="game-head">
+              <img class="icon" src="assets/icon-tiles.png" alt="">
+              <div>
+                <span class="tag live">● Live on Google Play</span>
+                <h3>Stackfall Tiles: Triple Match</h3>
+              </div>
+            </div>
+            <p>Tap three matching tiles off a layered stack before your tray fills up. Calm to play, tricky to master.</p>
+            <ul class="chips">
+              <li>60+ hand-built levels</li><li>Daily puzzle</li><li>Endless + leaderboard</li><li>14 tile styles</li>
+            </ul>
+            <div class="links">
+              <a class="btn small" href="https://play.google.com/store/apps/details?id=com.stackfall.tiles" rel="noopener">Get it on Google Play</a>
+              <a href="https://abraramin1213.github.io/stackfall-tiles/privacy.html">Privacy</a>
+              <a href="https://abraramin1213.github.io/stackfall-tiles/delete-account.html">Delete account</a>
             </div>
           </div>
-          <p>Tap three matching tiles off a layered stack before your tray fills up. Hand-built levels, a new Daily puzzle every day, an Endless mode with a global leaderboard, and collectable tile styles.</p>
-          <ul class="links">
-            <li><a class="btn small" href="https://play.google.com/store/apps/details?id=com.stackfall.tiles" rel="noopener">Get it on Google Play</a></li>
-            <li><a href="https://abraramin1213.github.io/stackfall-tiles/privacy.html">Privacy policy</a></li>
-            <li><a href="https://abraramin1213.github.io/stackfall-tiles/delete-account.html">Delete account</a></li>
-          </ul>
-        </div>
-      </article>
+        </article>
 
-      <article class="game">
-        <img class="shot" src="assets/shot-blocks.jpg" alt="Stackfall Blocks gameplay screenshot" width="405" height="720" loading="lazy">
-        <div class="game-body">
-          <div class="game-head">
-            <img class="icon" src="assets/icon-blocks.png" alt="" width="72" height="72">
-            <div>
-              <h3>Stackfall Blocks: Block Puzzle</h3>
-              <span class="tag soon">Coming soon</span>
+        <article class="game flip" style="--accent: #E0573D; --tint: #FBE5DF;">
+          <div class="phone"><img src="assets/shot-stackfall.jpg" alt="Stackfall gameplay" loading="lazy"></div>
+          <div class="game-body">
+            <div class="game-head">
+              <img class="icon" src="assets/icon-stackfall.png" alt="">
+              <div>
+                <span class="tag live">● Live on Google Play</span>
+                <h3>Stackfall</h3>
+              </div>
+            </div>
+            <p>The classic falling-block puzzle, redrawn in a clean Paper &amp; Ink style. Rotate, drop and clear lines as the speed climbs.</p>
+            <ul class="chips">
+              <li>Classic &amp; Time Attack</li><li>Weekly leaderboards</li><li>Paper / Ink themes</li><li>Hold &amp; combos</li>
+            </ul>
+            <div class="links">
+              <a class="btn small" href="https://play.google.com/store/apps/details?id=com.stack.fall" rel="noopener">Get it on Google Play</a>
             </div>
           </div>
-          <p>Drag pieces onto an 8×8 board and clear rows and columns for big combos. Classic mode with weekly leaderboards, a Daily challenge, and an Adventure of hand-tuned levels.</p>
-          <ul class="links">
-            <li><a href="https://abraramin1213.github.io/stackfall-blocks/privacy.html">Privacy policy</a></li>
-            <li><a href="https://abraramin1213.github.io/stackfall-blocks/delete-account.html">Delete account</a></li>
-          </ul>
-        </div>
-      </article>
+        </article>
+
+        <article class="game" style="--accent: #2F9E7A; --tint: #DDF1E8;">
+          <div class="phone"><img src="assets/shot-blocks.jpg" alt="Stackfall Blocks gameplay" loading="lazy"></div>
+          <div class="game-body">
+            <div class="game-head">
+              <img class="icon" src="assets/icon-blocks.png" alt="">
+              <div>
+                <span class="tag soon">● Coming soon</span>
+                <h3>Stackfall Blocks: Block Puzzle</h3>
+              </div>
+            </div>
+            <p>Drag pieces onto an 8×8 board and clear rows and columns for big combos. No timer, no rush — just one more move.</p>
+            <ul class="chips">
+              <li>Classic mode</li><li>Daily challenge</li><li>Adventure levels</li><li>Weekly leaderboards</li>
+            </ul>
+            <div class="links">
+              <a href="https://abraramin1213.github.io/stackfall-blocks/privacy.html">Privacy</a>
+              <a href="https://abraramin1213.github.io/stackfall-blocks/delete-account.html">Delete account</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
+  <!-- GALLERY -->
+  <section class="gallery" aria-label="Screenshots">
+    <div class="track">
+      <img src="assets/g-tiles-daily.jpg" alt="Stackfall Tiles daily puzzle" loading="lazy">
+      <img src="assets/g-stackfall-ink.jpg" alt="Stackfall in Ink theme" loading="lazy">
+      <img src="assets/g-blocks-combo.jpg" alt="Stackfall Blocks combo" loading="lazy">
+      <img src="assets/g-tiles-levels.jpg" alt="Stackfall Tiles level map" loading="lazy">
+      <img src="assets/g-blocks-adventure.jpg" alt="Stackfall Blocks adventure" loading="lazy">
+      <img src="assets/g-tiles-daily.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/g-stackfall-ink.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/g-blocks-combo.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/g-tiles-levels.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/g-blocks-adventure.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
   <section id="services" class="services">
     <div class="wrap">
-      <h2>What we do</h2>
+      <div class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2>Our own games, and yours too.</h2>
+        <p class="sub">Alongside our own titles, we build games and apps for studios, brands and museums.</p>
+      </div>
       <div class="grid">
         <div class="card">
+          <span class="ico" style="--c:#3B6FD8"><svg viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01"/><path d="M17.3 5H6.7a4 4 0 0 0-4 3.6l-.7 6.9A2.8 2.8 0 0 0 4.8 18.6c1 0 1.9-.5 2.3-1.4L8 15h8l.9 2.2c.4.9 1.3 1.4 2.3 1.4a2.8 2.8 0 0 0 2.8-3.1l-.7-6.9A4 4 0 0 0 17.3 5z"/></svg></span>
           <h3>Game development</h3>
-          <p>Casual and puzzle games in Unity, built for phones first — smooth on low-end Android, polished on the latest iPhone.</p>
+          <p>Casual and puzzle games in Unity, built phone-first — smooth on budget Android, polished on the latest iPhone.</p>
         </div>
         <div class="card">
+          <span class="ico" style="--c:#2F9E7A"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
           <h3>App development</h3>
           <p>Cross-platform apps in Flutter, including apps with embedded Unity 3D scenes, voice features and live backends.</p>
         </div>
         <div class="card">
+          <span class="ico" style="--c:#E0573D"><svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 22V12M21 7l-9 5-9-5"/></svg></span>
           <h3>AR &amp; interactive</h3>
           <p>Augmented-reality experiences for museums, brands and events, using image tracking and location-based content.</p>
         </div>
         <div class="card">
+          <span class="ico" style="--c:#E8A93A"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
           <h3>Launch &amp; live ops</h3>
-          <p>Store listings, ads and in-app purchases, leaderboards, analytics and regular updates after release.</p>
+          <p>Store listings, ads and in-app purchases, leaderboards, notifications and regular updates after release.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="wrap contact-grid">
-      <div>
-        <h2>Contact</h2>
-        <p>For support with any of our games, business enquiries or project work, email us — we reply within two working days.</p>
-        <a class="btn" href="mailto:abraramin1@gmail.com">abraramin1@gmail.com</a>
+  <!-- PROCESS -->
+  <section id="process" class="process">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How we work</p>
+        <h2>From idea to the store, in four steps.</h2>
       </div>
-      <address class="card">
-        <strong>AA Interactive</strong><br>
-        Office 4, AA Block, Fatehgarh<br>
-        Lahore, Pakistan<br>
-        <span class="muted">Owner: Abrar Amin</span>
-      </address>
+      <ol class="steps">
+        <li><span>01</span><h3>Design</h3><p>Mockups of every screen before a line of code, so you see the game first.</p></li>
+        <li><span>02</span><h3>Build</h3><p>Fast weekly builds on real phones, with automated checks for difficulty and balance.</p></li>
+        <li><span>03</span><h3>Launch</h3><p>Store art, listings, privacy pages, ads and purchases — all set up and reviewed.</p></li>
+        <li><span>04</span><h3>Grow</h3><p>Leaderboards, daily content and updates driven by what players actually do.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow light">Contact</p>
+          <h2>Let's make something people want to play.</h2>
+          <p>For game support, business enquiries or project work, email us — we reply within two working days.</p>
+          <a class="btn light" href="mailto:abraramin1@gmail.com">abraramin1@gmail.com</a>
+        </div>
+        <address>
+          <span class="label">Studio</span>
+          <strong>AA Interactive</strong>
+          Office 4, AA Block, Fatehgarh<br>
+          Lahore, Pakistan
+          <span class="label">Founder</span>
+          Abrar Amin
+        </address>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap foot-row">
-    <span>© <span id="y">2026</span> AA Interactive. All rights reserved.</span>
-    <span class="muted">Lahore, Pakistan</span>
+    <a class="brand small" href="#"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>AA Interactive</span></a>
+    <span class="muted">© <span id="y">2026</span> AA Interactive · Office 4, AA Block, Fatehgarh, Lahore, Pakistan</span>
   </div>
 </footer>
 
